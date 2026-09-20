@@ -1,0 +1,486 @@
+\documentclass[10pt,a4paper]{article}
+
+% ------------------------------------------------------------
+% PACKAGES
+% ------------------------------------------------------------
+\usepackage[a4paper,top=0.42in,bottom=0.42in,left=0.52in,right=0.52in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{ragged2e}
+
+% ------------------------------------------------------------
+% COLORS
+% ------------------------------------------------------------
+\definecolor{black}{RGB}{0,0,0}
+\definecolor{linkblue}{RGB}{0,0,0}
+
+% ------------------------------------------------------------
+% HYPERLINK SETTINGS
+% ------------------------------------------------------------
+\hypersetup{
+    colorlinks=true,
+    urlcolor=linkblue,
+    linkcolor=black,
+    citecolor=black
+}
+
+% ------------------------------------------------------------
+% PAGE SETTINGS
+% ------------------------------------------------------------
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% ------------------------------------------------------------
+% SECTION FORMAT
+% ------------------------------------------------------------
+\titleformat{\section}
+    {\large\bfseries\uppercase}
+    {}
+    {0pt}
+    {}
+    [\vspace{-5pt}\rule{\textwidth}{0.6pt}]
+
+\titlespacing{\section}
+    {0pt}
+    {7pt}
+    {4pt}
+
+% ------------------------------------------------------------
+% CUSTOM COMMANDS
+% ------------------------------------------------------------
+
+\newcommand{\resumeWorkHeading}[3]{
+    \textbf{#1}
+    \hfill
+    \textbf{#3}
+    \\
+    \textit{#2}
+    \vspace{1pt}
+}
+
+\newcommand{\resumeProject}[3]{
+    \textbf{#1}
+    \hfill
+    \href{#3}{\textbf{[GitHub]}}
+    \\
+    \textit{#2}
+    \vspace{1pt}
+}
+
+\newcommand{\resumeProjectNoLink}[2]{
+    \textbf{#1}
+    \\
+    \textit{#2}
+    \vspace{1pt}
+}
+
+\newcommand{\resumeProjectEnd}{
+    \vspace{3pt}
+}
+
+\newcommand{\skill}[2]{
+    \textbf{#1} #2\\
+}
+
+% ------------------------------------------------------------
+% DOCUMENT
+% ------------------------------------------------------------
+
+\begin{document}
+
+% ============================================================
+% HEADER
+% ============================================================
+
+\begin{center}
+
+    {\Huge\bfseries BIJOY SARKAR}
+
+    \vspace{4pt}
+
+    \small
+    \faMapMarkerAlt\ Agartala, Tripura, India
+    \hspace{10pt}
+    \faPhone\ +91-9863476486
+    \hspace{10pt}
+    \faEnvelope\ 
+    \href{mailto:bijoysarkar7252@gmail.com}
+    {bijoysarkar7252@gmail.com}
+
+    \vspace{3pt}
+
+    % \faLinkedin\ 
+    % \href{https://www.linkedin.com/in/bijoysarkar19}
+    % {linkedin.com/in/bijoysarkar19}
+    % \hspace{15pt}
+    % \faGithub\ 
+    % \href{https://github.com/BijoySarkar19}
+    % {github.com/BijoySarkar19}
+
+\end{center}
+
+\vspace{-3pt}
+\rule{\textwidth}{0.8pt}
+\vspace{4pt}
+
+% ============================================================
+% PERSONAL DETAILS
+% ============================================================
+
+\begin{tabularx}{\textwidth}{@{}X X X X X@{}}
+
+\centering
+\textbf{Date of Birth}\\
+19-10-2005
+
+&
+\centering
+\textbf{Nationality}\\
+INDIAN
+
+&
+\centering
+\textbf{Gender}\\
+Male
+
+&
+\centering
+\textbf{LinkedIn}\\
+\href{https://www.linkedin.com/in/bijoysarkar19}
+{bijoysarkar19}
+
+&
+\centering
+\textbf{GitHub}\\
+\href{https://github.com/BijoySarkar19}
+{BijoySarkar19}
+
+\end{tabularx}
+
+\vspace{5pt}
+\rule{\textwidth}{0.6pt}
+
+% ============================================================
+% PROFILE
+% ============================================================
+
+\section{Profile}
+
+\begin{justify}
+Computer Science \& Engineering undergraduate with hands-on experience in
+AI/ML, full-stack web development, cybersecurity, and mobile application
+development. Experienced in Python, Flutter, Firebase, computer vision,
+NLP, and software development through internships and practical projects.
+Currently seeking software development and AI/ML opportunities to build
+production-oriented solutions and strengthen problem-solving skills.
+\end{justify}
+
+% ============================================================
+% EDUCATION
+% ============================================================
+
+\section{Education}
+
+\resumeWorkHeading
+{Bachelor of Technology in Computer Science and Engineering}
+{ICFAI University Tripura, Agartala}
+{Aug 2023 -- Present}
+
+\vspace{2pt}
+
+% ============================================================
+% WORK EXPERIENCE
+% ============================================================
+
+\section{Work Experience}
+
+% ------------------------------------------------------------
+% STQC
+% ------------------------------------------------------------
+
+\resumeWorkHeading
+{Cybersecurity Intern}
+{ETDC, STQC Directorate, MeitY, Government of India}
+{Jun 2026 -- Jul 2026}
+
+\begin{itemize}[leftmargin=14pt, itemsep=1pt, topsep=1pt]
+    \item Worked on cybersecurity frameworks and Generative AI security with
+    focus on security assessment of AI applications.
+    
+    \item Conducted security risk analysis using
+    \textbf{OWASP guidelines for Large Language Models (LLMs)} to identify
+    potential vulnerabilities and mitigation strategies.
+    
+    \item Gained practical exposure to vulnerability assessment,
+    AI application security, and IT testing and quality assurance practices.
+\end{itemize}
+
+% ------------------------------------------------------------
+% NIT SILCHAR
+% ------------------------------------------------------------
+
+\resumeWorkHeading
+{AI/ML Intern}
+{National Institute of Technology Silchar}
+{Jan 2026 -- Mar 2026}
+
+\begin{itemize}[leftmargin=14pt, itemsep=1pt, topsep=1pt]
+    \item Worked on a \textbf{Road Segmentation} project using satellite
+    imagery for identifying and extracting road networks.
+    
+    \item Performed image preprocessing, dataset preparation,
+    feature extraction, and semantic segmentation using Python.
+    
+    \item Worked with satellite imagery datasets and evaluated computer
+    vision models for road detection and segmentation.
+\end{itemize}
+
+% ------------------------------------------------------------
+% TALKENG
+% ------------------------------------------------------------
+
+\resumeWorkHeading
+{App Developer Intern}
+{TalkEng, Agartala}
+{Jun 2025 -- Jul 2025}
+
+\begin{itemize}[leftmargin=14pt, itemsep=1pt, topsep=1pt]
+    \item Developed an \textbf{Expense Tracker} mobile application using
+    \textbf{Flutter and Dart}.
+    
+    \item Implemented Firebase Authentication and real-time database
+    integration for secure user data management.
+    
+    \item Worked on application functionality, user interface development,
+    and overall user experience.
+\end{itemize}
+
+% ------------------------------------------------------------
+% APNI ESTATE
+% ------------------------------------------------------------
+
+\resumeWorkHeading
+{Full-Stack Development Intern}
+{Apni Estate, Agartala}
+{Jun 2024 -- Aug 2024}
+
+\begin{itemize}[leftmargin=14pt, itemsep=1pt, topsep=1pt]
+    \item Contributed to both front-end and back-end development of
+    web applications.
+    
+    \item Worked on application design, coding, testing, debugging,
+    and deployment-related activities.
+    
+    \item Collaborated on feature development and improved application
+    functionality through practical development tasks.
+\end{itemize}
+
+% ------------------------------------------------------------
+% COMPUTER TUTOR
+% ------------------------------------------------------------
+
+\resumeWorkHeading
+{Computer Tutor}
+{Novel Computer, Agartala}
+{Mar 2022 -- Aug 2022}
+
+\begin{itemize}[leftmargin=14pt, itemsep=1pt, topsep=1pt]
+    \item Taught computer fundamentals, programming basics, MS Office,
+    and practical IT skills through hands-on learning.
+\end{itemize}
+
+% ============================================================
+% TECHNICAL SKILLS
+% ============================================================
+
+\section{Technical Skills}
+
+\skill{Languages:}
+{Python, C++, C, Java, JavaScript, Dart, SQL}
+
+\skill{AI/ML:}
+{Machine Learning, Deep Learning, Computer Vision, NLP, OpenCV,
+Jupyter Notebook}
+
+\skill{Web \& App:}
+{HTML, CSS, Flask, Streamlit, Flutter, Firebase}
+
+\skill{Databases:}
+{MySQL, SQLite, Firestore}
+
+\skill{Cybersecurity:}
+{OWASP, LLM Security, Vulnerability Assessment, AI Security}
+
+\skill{Tools:}
+{Git, GitHub, Android Studio, VS Code}
+
+% ============================================================
+% PROJECTS
+% ============================================================
+
+\section{Projects}
+
+% ------------------------------------------------------------
+% PROJECT 1 - OWASP
+% ------------------------------------------------------------
+
+\resumeProject
+{OWASP AI Security Assistant}
+{Python Flask | Ollama | Llama 3 | Docker | OWASP}
+{https://github.com/BijoySarkar19/owasp-ai-security-assistant}
+
+\begin{itemize}[leftmargin=14pt, itemsep=1pt, topsep=1pt]
+    \item Developed a cybersecurity web application to assess code,
+    URL endpoints, and infrastructure against OWASP vulnerability
+    categories.
+    
+    \item Integrated local AI inference using \textbf{Ollama and Llama 3}
+    for security analysis, vulnerability assessment, and remediation
+    recommendations.
+    
+    \item Implemented assessment history, security metrics, dataset
+    management, and re-evaluation workflows.
+    
+    \item Containerized the application using \textbf{Docker and Docker
+    Compose} for portable and consistent deployment.
+\end{itemize}
+
+\resumeProjectEnd
+
+% ------------------------------------------------------------
+% PROJECT 2 - RAKSHAK AI
+% ------------------------------------------------------------
+
+\resumeProjectNoLink
+{Rakshak-AI}
+{AI Assistant | Python | LM Studio | Llama 3.2 | SQLite}
+
+\begin{itemize}[leftmargin=14pt, itemsep=1pt, topsep=1pt]
+    \item Developed an AI-powered assistant using \textbf{Python} and
+    a locally hosted LLM through \textbf{LM Studio}.
+    
+    \item Integrated conversational AI with a desktop GUI, BMI
+    calculation, speech recognition, and text-to-speech functionality.
+    
+    \item Implemented \textbf{SQLite} for persistent data management
+    and designed an interactive assistant experience.
+\end{itemize}
+
+\resumeProjectEnd
+
+% ------------------------------------------------------------
+% PROJECT 3 - ROAD SEGMENTATION
+% ------------------------------------------------------------
+
+\resumeProjectNoLink
+{Road Segmentation from Satellite Images}
+{Python | Computer Vision | Jupyter Notebook | Kaggle}
+
+\begin{itemize}[leftmargin=14pt, itemsep=1pt, topsep=1pt]
+    \item Developed a computer vision system for identifying and
+    extracting road networks from satellite imagery.
+    
+    \item Performed image preprocessing, dataset preparation,
+    model training, and evaluation using satellite image datasets.
+    
+    \item Explored semantic segmentation techniques for applications
+    in geographic mapping and infrastructure planning.
+\end{itemize}
+
+\resumeProjectEnd
+
+% ------------------------------------------------------------
+% PROJECT 4 - EXPENSE TRACKER
+% ------------------------------------------------------------
+
+\resumeProjectNoLink
+{Expense Tracker}
+{Flutter | Dart | Firebase | Firestore}
+
+\begin{itemize}[leftmargin=14pt, itemsep=1pt, topsep=1pt]
+    \item Developed a mobile application for recording and categorizing
+    daily expenses using \textbf{Flutter and Dart}.
+    
+    \item Integrated \textbf{Firebase Authentication and Firestore}
+    for secure user authentication and real-time data management.
+    
+    \item Implemented expense summaries and an intuitive user interface
+    for monitoring personal spending.
+\end{itemize}
+
+\resumeProjectEnd
+
+% ------------------------------------------------------------
+% PROJECT 5 - SMART ATTENDANCE
+% ------------------------------------------------------------
+
+\resumeProjectNoLink
+{Smart Attendance System Using Face Recognition}
+{Python | OpenCV | Face Recognition | Computer Vision}
+
+\begin{itemize}[leftmargin=14pt, itemsep=1pt, topsep=1pt]
+    \item Developed an automated attendance system using
+    \textbf{face recognition and computer vision}.
+    
+    \item Implemented face detection, feature extraction, identity
+    matching, and automated attendance recording.
+    
+    \item Designed the system to reduce manual effort and maintain
+    organized attendance records.
+\end{itemize}
+
+\resumeProjectEnd
+
+% ============================================================
+% ADDITIONAL PROJECTS
+% ============================================================
+
+\section{Additional Projects}
+
+\textbf{AI-Based Text Sentiment Analysis}
+\hfill
+\textit{Python | Flask | NLTK | VADER | YouTube API}
+
+\vspace{1pt}
+
+Developed a sentiment analysis application using Natural Language
+Processing techniques to classify textual content into positive,
+negative, and neutral sentiment categories.
+
+\vspace{4pt}
+
+\textbf{Advanced NLP}
+\hfill
+\textit{Python | Jupyter Notebook | NLP | Kaggle}
+
+\vspace{1pt}
+
+Developed an NLP project for processing and analyzing textual datasets,
+using preprocessing, tokenization, feature extraction, and text analysis
+techniques.
+
+% ============================================================
+% LANGUAGES
+% ============================================================
+
+\section{Languages}
+
+English \hspace{15pt} | \hspace{15pt}
+Hindi \hspace{15pt} | \hspace{15pt}
+Bengali
+
+% ============================================================
+% END DOCUMENT
+% ============================================================
+
+\end{document}
